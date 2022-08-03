@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Aim Training</title>
+    <script async defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="screen one">
+      <h1>Aim Training</h1>
+      <a href="#" class="start" id="start">Start game</a>
+    </div>
+
+    <div class="screen two">
+      <h1>Set time</h1>
+      <ul class="time-list" id="time-list">
+        <li>
+          <button class="time-btn" data-time="10">
+            10 s
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="20">
+            20 s
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="30">
+            30 s
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="screen three">
+      <h2><span id="time">00:00</span></h2>
+      <div class="board" id="board"></div>
+    </div>
+    <div class="screen four" id="result">
+      <h1>Your score: <span class = 'primary' id="score">0</span></h1>
+      <button class="restart-button" onclick="restartGame()">
+        <img src="restart.png" alt="" class="restart">
+      </button>
+    </div>
+  </body>
+</html>
