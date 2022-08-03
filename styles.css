@@ -2,10 +2,10 @@
 
 * {
   box-sizing: border-box;
-  /*user-select: none;*/
-  /*-moz-user-select: none;*/
-  /*-webkit-user-select: none;*/
-  /*-ms-user-select: none;*/
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 body {
@@ -122,12 +122,6 @@ h1 {
   -webkit-user-drag: none;
 }
 
-/*.restart:hover {*/
-/*  -webkit-animation: rotate 0.5s linear infinite;*/
-/*  -moz-animation: rotate 0.5s linear infinite;*/
-/*  -o-animation: rotate 0.5s linear infinite;*/
-/*  animation: rotate 0.5s linear infinite;*/
-/*}*/
 .restart-button {
   cursor: pointer;
   background: transparent;
