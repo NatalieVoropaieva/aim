@@ -2,6 +2,10 @@
 
 * {
   box-sizing: border-box;
+  /*user-select: none;*/
+  /*-moz-user-select: none;*/
+  /*-webkit-user-select: none;*/
+  /*-ms-user-select: none;*/
 }
 
 body {
@@ -114,17 +118,28 @@ h1 {
 .restart{
   width: 50px;
   height: 50px;
-
+  user-drag: none;
+  -webkit-user-drag: none;
 }
 
-.restart:hover {
-  animation: rotate 0.5s linear infinite;
-}
-.restart-button{
+/*.restart:hover {*/
+/*  -webkit-animation: rotate 0.5s linear infinite;*/
+/*  -moz-animation: rotate 0.5s linear infinite;*/
+/*  -o-animation: rotate 0.5s linear infinite;*/
+/*  animation: rotate 0.5s linear infinite;*/
+/*}*/
+.restart-button {
   cursor: pointer;
   background: transparent;
   outline: none;
   border: none;
+}
+
+.restart-button:hover .restart {
+  -webkit-animation: rotate 0.5s linear infinite;
+  -moz-animation: rotate 0.5s linear infinite;
+  -o-animation: rotate 0.5s linear infinite;
+  animation: rotate 0.5s linear infinite;
 }
 
 .one {
@@ -145,9 +160,15 @@ h1 {
 
 @keyframes rotate {
   from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
